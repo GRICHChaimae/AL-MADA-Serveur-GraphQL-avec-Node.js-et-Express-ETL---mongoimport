@@ -18,7 +18,7 @@ app.use(
     '/graphql', 
     graphqlHTTP({
     schema,
-    graphiql: true,
+    graphiql: true
 }))
 
 app.listen(port, console.log(`Server running on port ${port}`))
