@@ -16,4 +16,20 @@ const ADD_DELL = gql`
     }
 `
 
-export { ADD_DELL }
+const DELETE_CLIENT = gql`
+    mutation deleteDell($id: ID!) {
+        deleteDell(id: $id) {
+            id
+            Brand_name
+            IPR
+            Designation
+            Status
+            Number
+            Office
+            Nice_classification
+            Owner
+        }
+    }
+`
+
+export { ADD_DELL, DELETE_CLIENT }
